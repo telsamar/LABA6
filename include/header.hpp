@@ -5,7 +5,6 @@
 
 #include <llogs.h>
 
-
 void logs() {
     srand(*(new int));
     static const string ideal("0000");

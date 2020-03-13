@@ -1,7 +1,7 @@
+// Copyright 2020 <telsamar>
 
 #ifndef LAB_O_TWO_LLOGS_H
 #define LAB_O_TWO_LLOGS_H
-
 
 #include <thread>
 #include <cstdlib>
@@ -13,7 +13,6 @@
 #include <boost/log/expressions.hpp>
 #include <boost/log/utility/setup.hpp>
 
-
 #include "picosha2.h"
 
 using std::thread;
@@ -24,7 +23,6 @@ using std::string;
 using std::size_t;
 using std::to_string;
 using std::rand;
-
 
 void init_logs() {
     auto log = boost::log::add_file_log(
@@ -46,7 +44,5 @@ void init_logs() {
             boost::log::trivial::severity >= boost::log::trivial::info
     );
 }
-
-
 
 #endif //LAB_O_TWO_LLOGS_H
