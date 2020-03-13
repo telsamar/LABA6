@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\универ\GITHUB\LABA6\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Анатолий\Desktop\laba6-master\laba6-master\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -45,7 +45,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\универ\GITHUB\LABA6\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\универ\GITHUB\LABA6\out\build\x64-Debug\_3rdParty\Hunter\toolchain -BC:\универ\GITHUB\LABA6\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Анатолий\Desktop\laba6-master\laba6-master\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Анатолий\Desktop\laba6-master\laba6-master\out\build\x64-Debug\_3rdParty\Hunter\toolchain -BC:\Users\Анатолий\Desktop\laba6-master\laba6-master\out\build\x64-Debug\_3rdParty\Hunter\toolchain\_builds"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1

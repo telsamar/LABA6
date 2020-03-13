@@ -1,4 +1,4 @@
-# Install script for directory: C:/универ/GITHUB/LABA6/out/build/x64-Debug/_3rdParty/Hunter/toolchain
+# Install script for directory: C:/Users/Анатолий/Desktop/laba6-master/laba6-master/out/build/x64-Debug/_3rdParty/Hunter/toolchain
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/универ/GITHUB/LABA6/out/build/x64-Debug/_3rdParty/Hunter/toolchain/_builds/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Анатолий/Desktop/laba6-master/laba6-master/out/build/x64-Debug/_3rdParty/Hunter/toolchain/_builds/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
