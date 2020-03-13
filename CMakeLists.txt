@@ -16,7 +16,9 @@ HunterGate(
   SHA1 "9a3594a61227967fb92159339ba326701b287b19"
 )
 
-project(LABA6)
+
+project(lab_o_two)
+
 
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
@@ -27,9 +29,14 @@ hunter_add_package(Boost COMPONENTS filesystem log system thread)
 find_package(Boost CONFIG REQUIRED filesystem log log_setup system thread)
 find_package(Threads)
 
+
+
+
 add_executable(main
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
         include/llogs.h)
+
+
 
 target_include_directories(main
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -38,6 +45,8 @@ target_include_directories(main
 target_include_directories(main
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/picosha
 )
+
+
 
 target_link_libraries(main 
         Boost::log_setup

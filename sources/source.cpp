@@ -3,11 +3,9 @@
 #include <header.hpp>
 
 int main(int argc, char* argv[]) {
-	//size_t M = thread::hardware_concurrency();
 	size_t M = 0;
-    if (argc > 1)
-		M = atoi(argv[1]);
-        if (M == 0) M = thread::hardware_concurrency();
+    if (argc > 1) M = atoi(argv[1]);
+    if (M == 0) M = thread::hardware_concurrency();
 	boost::log::register_simple_formatter_factory<boost::log::trivial::severity_level, char>("Severity");
 	init_logs();
 	boost::log::add_common_attributes();
