@@ -1,2 +1,0 @@
-C:/Users/Анатолий/Desktop/laba6-master/laba6-master/out/build/x64-Debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/edit_cache.dir
-C:/Users/Анатолий/Desktop/laba6-master/laba6-master/out/build/x64-Debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/rebuild_cache.dir
