@@ -1,5 +1,5 @@
 os: linux
-sudo: required
+sudo: 
 language: "minimal"
 services:
   - docker
@@ -14,5 +14,7 @@ jobs:
         - chmod 755 scripts/*.sh
         - docker run -v `pwd`:`pwd` -w `pwd` rusdevops/bootstrap-cpp ./scripts/checks.sh
  
+
+
 notifications:
   email: false
