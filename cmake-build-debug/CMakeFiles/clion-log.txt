@@ -1,0 +1,32 @@
+"D:\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Git\lab-06-multithreads
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: C:/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: ab7ade2 | Config-ID: c351cc1 ]
+-- [hunter] BOOST_ROOT: C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install (ver.: 1.70.0-p0)
+CMake Warning (dev) at CMakeLists.txt:27 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Environment variable Boost_ROOT is set to:
+
+    C:/.hunter/_Base/9a3594a/ab7ade2/c351cc1/Install
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+--   log
+--   log_setup
+--   system
+--   thread
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Git/lab-06-multithreads/cmake-build-debug
