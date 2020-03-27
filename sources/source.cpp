@@ -26,11 +26,11 @@ static const int SIZE_ROTATION(5*1024*1024);
 static const int ZERO(0);
 void init_logs() {
     auto log = boost::log::add_file_log(
-            boost::log::keywords::file_name = "../logs/logFile_%N.log" ,
-            boost::log::keywords::rotation_size = SIZE_ROTATION,
-            boost::log::keywords::time_based_rotation =
-                    boost::log::sinks::file::rotation_at_time_point{ ZERO, ZERO, ZERO },
-            boost::log::keywords::format = "[%TimeStamp%]: %Message%");
+       boost::log::keywords::file_name = "../logs/logFile_%N.log" ,
+       boost::log::keywords::rotation_size = SIZE_ROTATION,
+       boost::log::keywords::time_based_rotation =
+       boost::log::sinks::file::rotation_at_time_point{ ZERO, ZERO, ZERO },
+       boost::log::keywords::format = "[%TimeStamp%]: %Message%");
 
     auto log2 = boost::log::add_console_log(
             cout,
@@ -51,9 +51,11 @@ void logs() {
         string s = to_string(R);
         string Crypted = picosha2::hash256_hex_string(s);
         if (Crypted.substr(Crypted.size() - IDEAL.size()) != IDEAL)
-            BOOST_LOG_TRIVIAL(trace) << "Non-positive result: " << Crypted << ", which result of " << s;
+            BOOST_LOG_TRIVIAL(trace) << "Non-positive result: "
+			<< Crypted << ", which result of " << s;
         else
-            BOOST_LOG_TRIVIAL(info) << "Positive result: " << Crypted << ", which result of " << s;
+            BOOST_LOG_TRIVIAL(info) << "Positive result: "
+			<< Crypted << ", which result of " << s;
     }
 }
 int main(int argc, char* argv[]) {
@@ -65,17 +67,15 @@ int main(int argc, char* argv[]) {
 
      M = thread::hardware_concurrency();
 
-
-	boost::log::register_simple_formatter_factory<boost::log::trivial::severity_level, char>("Severity");
-	init_logs();
-	boost::log::add_common_attributes();
-	BOOST_LOG_TRIVIAL(trace) << "Threads amount: " << M;
-	vector<thread*> threads;
-	threads.resize(M);
-	for (size_t i = 0; i < M; i++)
-		threads[i] = new thread(logs);
-	for (auto th : threads)
-		th->join();
-	return 0;
+   boost::log::register_simple_formatter_factory<
+   boost::log::trivial::severity_level, char>("Severity");
+   init_logs();
+   boost::log::add_common_attributes();
+   BOOST_LOG_TRIVIAL(trace) << "Threads amount: " << M;
+   vector<thread*> threads;
+   threads.resize(M);
+   for (size_t i = 0; i < M; i++)
+   threads[i] = new thread(logs);
+   for (auto th : threads) th->join(); return 0;
 }
 
