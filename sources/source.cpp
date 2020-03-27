@@ -11,7 +11,6 @@
 #include <boost/log/utility/setup.hpp>
 
 
-#include "picosha2.h"
 
 using std::thread;
 using std::atoi;
