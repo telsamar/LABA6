@@ -52,10 +52,10 @@ void logs() {
         string Crypted = picosha2::hash256_hex_string(s);
         if (Crypted.substr(Crypted.size() - IDEAL.size()) != IDEAL)
             BOOST_LOG_TRIVIAL(trace) << "Non-positive result: "
-			<< Crypted << ", which result of " << s;
+            << Crypted << ", which result of " << s;
         else
             BOOST_LOG_TRIVIAL(info) << "Positive result: "
-			<< Crypted << ", which result of " << s;
+            << Crypted << ", which result of " << s;
     }
 }
 int main(int argc, char* argv[]) {
