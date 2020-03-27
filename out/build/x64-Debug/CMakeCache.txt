@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Build coverage
+BUILD_COVERAGE:BOOL=OFF
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -117,7 +120,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lab_o_two
+CMAKE_PROJECT_NAME:STATIC=Threads
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x64/rc.exe
@@ -213,6 +216,12 @@ HUNTER_STATUS_PRINT:BOOL=ON
 
 //Enable/disable TLS certificate checking on downloads
 HUNTER_TLS_VERIFY:BOOL=ON
+
+//Value Computed by CMake
+Threads_BINARY_DIR:STATIC=C:/универ/GITHUB/LABA6/out/build/x64-Debug
+
+//Value Computed by CMake
+Threads_SOURCE_DIR:STATIC=C:/универ/GITHUB/LABA6
 
 //Value Computed by CMake
 lab_o_two_BINARY_DIR:STATIC=C:/универ/GITHUB/LABA6/out/build/x64-Debug

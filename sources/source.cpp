@@ -1,4 +1,5 @@
 // Copyright 2020 <telsamar>
+#include "Enumeration.hpp"
 #include <thread>
 #include <cstdlib>
 #include <vector>
