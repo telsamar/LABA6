@@ -20,7 +20,7 @@ using std::string;
 using std::size_t;
 using std::to_string;
 using std::rand;
-#define IDEAL ("0000");
+static const int IDEAL(0000);
 
 static const int SIZE_ROTATION(5*1024*1024);
 static const int ZERO(0);
