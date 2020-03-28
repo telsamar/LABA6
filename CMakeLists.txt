@@ -30,6 +30,7 @@ find_package(Threads)
 
 add_executable(
         ${PROJECT_NAME}
+        sources/main.cpp
         sources/source.cpp)
 
 target_include_directories(
