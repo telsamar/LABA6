@@ -22,6 +22,6 @@
 #include <csignal>
 
 
-void logs();
+void enumeration();
 
 #endif // INCLUDE_ENUMERATION_HPP_
